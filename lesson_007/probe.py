@@ -54,25 +54,35 @@
 #
 
 
-class Backpack:
+# class Backpack:
+#
+#     def __init__(self, gift=None):
+#         self.content = []
+#         if gift is not None:
+#             self.content.append(gift)
+#
+#     def add(self, item):
+#         self.content.append(item)
+#         print("В рюкзак положили", item)
+#
+#     def __str__(self):
+#         return "Backpack: " + ", ".join(self.content)
+#
+#     def __bool__(self):
+#         return self.content != []
+#
+#     def __len__(self):
+#         return len(self.content)
+#
+#
+# my_backpack = Backpack()
+# my_backpack.add(item="ноутбук")
+# # print(len(my_backpack), bool(my_backpack))
+#
+# if len(my_backpack) > 0:
+#     print("Рюкзак не пуст")
+#     print("В нём лежит", len(my_backpack), "предметов")
+# else:
+#     print("Рюкзак пуст")
 
-    def __init__(self, gift = None):
-        self.content = []
-        if gift is not None:
-            self.content.append(gift)
-
-    def add(self, item):
-        self.content.append(item)
-        print("В рюкзак положили", item)
-
-    def inspect(self):
-        print("В рюкзаке лежит:")
-        for item in self.content:
-            print("   ", item)
-
-
-my_backpack = Backpack(gift="флешка")
-my_backpack.add("ноутбук")
-my_backpack.add("зарядка от ноутбука")
-my_backpack.inspect()
 
